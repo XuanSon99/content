@@ -1,0 +1,40 @@
+.content{
+    background: linear-gradient(to top right, #ff9933 0%, #ff0066 100%);
+    padding: 40px;
+    margin: 50px 0;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px salmon, 0 0 20px salmon, 0 0 50px salmon;
+}
+.content .detail{
+    overflow: hidden;
+    border-radius: 10px;
+}
+.content h1, .content h4{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.content h1{
+    text-transform: uppercase;
+}
+.content h4{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-weight: normal;
+}
+.detail img{
+    object-fit: cover;
+    width: 100%;
+}
+.detail h3{
+    margin-top: 10px;
+    padding: 0 20px;
+}
+.detail p{
+    padding: 0 20px;
+}
+.detail{
+    background: #fff;
+    color: #000;
+}
