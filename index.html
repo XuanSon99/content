@@ -11,35 +11,32 @@
     <title>Content</title>
   </head>
   <body>
-    <div class="container">
-        <div class="content">
-            <h1>Nàng thơ</h1>
-            <h4>Em không là nàng thơ, anh cũng không còn là nhạc sĩ mộng mơ. Tình này nhẹ như gió, lại trĩu lên tim ta những vết hằn</h4>
-            <div class="row">
-                <div class="col-4">
-                    <div class="detail">
-                        <img src="https://avatar-ex-swe.nixcdn.com/song/share/2020/07/31/d/5/a/a/1596188260287.jpg" alt="">
-                        <h3>Nàng thơ</h3>
-                        <p>Em không là nàng thơ, anh cũng không còn là nhạc sĩ mộng mơ. Tình này nhẹ như gió, lại trĩu lên tim ta những vết hằn</p>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="detail">
-                        <img src="https://avatar-ex-swe.nixcdn.com/song/share/2020/07/31/d/5/a/a/1596188260287.jpg" alt="">
-                        <h3>Nàng thơ</h3>
-                        <p>Em không là nàng thơ, anh cũng không còn là nhạc sĩ mộng mơ. Tình này nhẹ như gió, lại trĩu lên tim ta những vết hằn</p>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="detail">
-                        <img src="https://avatar-ex-swe.nixcdn.com/song/share/2020/07/31/d/5/a/a/1596188260287.jpg" alt="">
-                        <h3>Nàng thơ</h3>
-                        <p>Em không là nàng thơ, anh cũng không còn là nhạc sĩ mộng mơ. Tình này nhẹ như gió, lại trĩu lên tim ta những vết hằn</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v9.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution="setup_tool"
+        page_id="101724134799364"
+  theme_color="#44bec7"
+  logged_in_greeting="Bạn cần giúp gì thì nói mẹ đi lằng nhằng"
+  logged_out_greeting="Bạn cần giúp gì thì nói mẹ đi lằng nhằng">
+      </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
